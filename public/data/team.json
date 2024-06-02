@@ -1,0 +1,103 @@
+{
+  "data": [
+    {
+      "name": "Lakhan Nagar",
+      "position": "Sr.Software Engineer",
+      "contact": {
+        "email": "Lakhan@car-rental-pro.gmail.com",
+        "phone": "555-555-5555",
+        "telegram": "https://t.me/"
+      }
+    },
+    {
+      "name": "Gopal Patidar",
+      "position": "Software Engineer",
+      "contact": {
+        "email": "gopal@car-rental-pro@gmail.com",
+        "phone": "551-455-2455",
+        "telegram": "https://t.me/"
+      }
+    },
+    {
+      "name": "Sachin Soni",
+      "position": "Salesman",
+      "contact": {
+        "email": "sachin@car-rental-pro@gmail.com",
+        "phone": "123-456-7890",
+        "telegram": "https://t.me/"
+      }
+    },
+    {
+      "name": "Vishal Tanwar",
+      "position": "Data Analyst",
+      "contact": {
+        "email": "vishal@car-rental-pro.gmail.com",
+        "phone": "555-555-5555",
+        "telegram": "https://t.me/"
+      }
+    },
+    {
+      "name": "Akanksha Singh",
+      "position": "Software Engineer",
+      "contact": {
+        "email": "Akanksha@car-rental-pro@gmail.com",
+        "phone": "551-455-2455",
+        "telegram": "https://t.me/"
+      }
+    },
+    {
+      "name": "Chetan Singh",
+      "position": "Salesman",
+      "contact": {
+        "email": "chetan@car-rental-pro@gmail.com",
+        "phone": "123-456-7890",
+        "telegram": "https://t.me/"
+      }
+    },
+    {
+      "name": "Yogeshwari Jhala",
+      "position": "Sr.Software Developer",
+      "contact": {
+        "email": "Yoge@car-rental-pro.gmail.com",
+        "phone": "555-555-5555",
+        "telegram": "https://t.me/"
+      }
+    },
+    {
+      "name": "Deepsikha Prajapat",
+      "position": "Designer",
+      "contact": {
+        "email": "Dp@car-rental-pro@gmail.com",
+        "phone": "551-455-2455",
+        "telegram": "https://t.me/"
+      }
+    },
+    {
+      "name": "Arptit ",
+      "position": "Front-End Developer",
+      "contact": {
+        "email": "arpit@car-rental-pro@gmail.com",
+        "phone": "123-456-7890",
+        "telegram": "https://t.me/"
+      }
+    },
+    {
+      "name": "Muskan Chouhan",
+      "position": "Product Manager",
+      "contact": {
+        "email": "panda@car-rental-pro.gmail.com",
+        "phone": "555-555-5555",
+        "telegram": "https://t.me/"
+      }
+    },
+    {
+      "name": "Mangal Patidar",
+      "position": "Software Engineer",
+      "contact": {
+        "email": "mangal@car-rental-pro@gmail.com",
+        "phone": "551-455-2455",
+        "telegram": "https://t.me/"
+      }
+    }
+  ]
+}

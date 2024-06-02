@@ -1,0 +1,82 @@
+{
+  "data": [
+    {
+      "model": "Honda City",
+      "rentName": "Honda City A1 S-Line",
+      "mark": "A1",
+      "year": 2012,
+      "doors": "4/5",
+      "AC": true,
+      "transmission": "Manual",
+      "fuel": "Gasoline",
+      "price": 45,
+      "src": "/assets/models/audi.jpg",
+      "rating": 4
+    },
+    {
+      "model": "Tata Indica Vista",
+      "rentName": "VW Golf 6",
+      "mark": "Volkswagen",
+      "year": 2008,
+      "doors": "4/5",
+      "AC": true,
+      "transmission": "Manual",
+      "fuel": "Diesel",
+      "price": 37,
+      "src": "/assets/models/vw-golf.jpg",
+      "rating": 5
+    },
+    {
+      "model": "Swift",
+      "rentName": "Maruti Swift",
+      "mark": "Maruti",
+      "year": 2006,
+      "doors": "4/5",
+      "AC": true,
+      "transmission": "Automatic",
+      "fuel": "Hybrid",
+      "price": 30,
+      "src": "/assets/models/toyota-camry.jpg",
+      "rating": 3
+    },
+    {
+      "model": "Etios",
+      "rentName": "Toyoto Etios",
+      "mark": "Toyoto",
+      "year": 2012,
+      "doors": "4/5",
+      "AC": true,
+      "transmission": "Manual",
+      "fuel": "Diesel",
+      "price": 35,
+      "src": "/assets/models/bmw-320.jpg",
+      "rating": 4
+    },
+    {
+      "model": "Hyundai Verna",
+      "rentName": "Hyundai Verna",
+      "mark": "Hyundai",
+      "year": 2006,
+      "doors": "4/5",
+      "AC": true,
+      "transmission": "Manual",
+      "fuel": "Diesel",
+      "price": 50,
+      "src": "/assets/models/mercedes-benz.jpg",
+      "rating": 5
+    },
+    {
+      "model": "Skoda Rapid",
+      "rentName": "Skoda Rapid",
+      "mark": "Volkswagen",
+      "year": 2008,
+      "doors": "4/5",
+      "AC": true,
+      "transmission": "Automatic",
+      "fuel": "Gasoline",
+      "price": 25,
+      "src": "/assets/models/vw-passat.jpg",
+      "rating": 4
+    }
+  ]
+}
