@@ -48,7 +48,7 @@ export default function Footer() {
         </li>
         <li className="hover:text-red-500 transition-all duration-500 cursor-pointer">
           <a
-            target="_blank"
+            // target="_blank"
             href="/"
             rel="noopener noreferrer"
           >
@@ -57,7 +57,7 @@ export default function Footer() {
         </li>
         <li className="hover:text-red-500 transition-all duration-500 cursor-pointer">
           <a
-            target="_blank"
+            // target="_blank"
             href="/"
             rel="noopener noreferrer"
           >

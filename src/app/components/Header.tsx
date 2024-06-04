@@ -28,7 +28,7 @@ export default function Header() {
           </Link>
         </div>
         <div className="hidden lg:block nav_links">
-          <ul className="flex gap-2 xl:gap-6 font-4xl text-sm xl:text-lg">
+          <ul className="flex gap-2 lg:gap-6 font-4xl text-sm xl:text-lg">
             <li className="cursor-pointer hover:text-red-500 transition-all duration-300">
               <Link href="/">Home</Link>
             </li>

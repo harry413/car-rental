@@ -27,7 +27,7 @@ export default function CarPicker({ models }: { models: Model[] }) {
   const id = useId();
   return (
     <div className="flex justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 auto-rows-auto gap-16 bg-white w-full items-center py-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3 auto-rows-auto gap-8 bg-white w-full items-center py-4">
         <div
           className="flex flex-col justify-self-start mr-auto text-center text-black font-extrabold text-lg gap-2 w-full"
           data-aos="fade-left"
@@ -57,7 +57,7 @@ export default function CarPicker({ models }: { models: Model[] }) {
           className="flex flex-col text-center ml-auto text-black w-full"
           data-aos="fade-right"
         >
-          <div className="bg-[#c6202b] text-white px-4 py-2 flex items-center m-0 w-full justify-center border-2 border-[#c6202b]">
+          <div className="bg-[#c6202b] text-white px-2 py-2 flex items-center m-0 w-full justify-center border-2 border-[#c6202b]">
             <span className="font-bold text-3xl mr-2">${pickedCar.price}</span>
             <span className="text-lg">/ rent per day</span>
           </div>

@@ -144,7 +144,7 @@ export default function Home() {
       >
         <h2 className="font-bold text-2xl">Plan your trip now</h2>
         <h1 className="font-extrabold text-5xl">Quick & easy car rental</h1>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 auto-rows-auto gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 auto-rows-auto gap-8">
           <div className="flex flex-col items-center text-center">
             <Image
               src="/assets/select-car.png"
@@ -187,7 +187,7 @@ export default function Home() {
         </div>
       </section>
       <section
-        className="flex flex-col items-center text-center py-12 px-4 md:px-24 bg-white w-full"
+        className="flex flex-col items-center text-center py-12 px-4 md:px-24 bg-white w-full justify-center"
         id="pick-car"
       >
         <h2 className="font-bold text-2xl">Vehicle Models</h2>
@@ -286,7 +286,7 @@ export default function Home() {
         </div>
       </section>
       <section
-        className="flex flex-col items-center text-center gap-2 py-12 px-12 lg:px-4 xl:px-24 w-full bg-[#F8F8F8]"
+        className="flex flex-col items-center text-center gap-2 py-12 px-12 lg:px-8 xl:px-24 w-full bg-[#F8F8F8]"
         id="rewiews"
         data-aos="zoom-in"
       >
@@ -316,9 +316,9 @@ export default function Home() {
         className="flex flex-col items-start text-left gap-2 py-24 px-4 md:px-24 w-full bg-[#F8F8F8] text-lg bg-[url('/assets/bg-download.png')] h-auto bg-cover bg-no-repeat"
         id="download-app"
       >
-        <div className="w-full  xl:w-1/2">
+        <div className="w-full lg:w-2/3">
           <span>
-            <h2 className="text-5xl font-bold lg:px-4">
+            <h2 className="text-5xl font-bold lg:px-2">
               Download our app to get most out of it
             </h2>
             <p className="mt-4 text-lg w-2/3">
