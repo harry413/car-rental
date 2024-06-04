@@ -41,7 +41,7 @@ function BookModal({
       <div
         id="defaultModal"
         aria-hidden="true"
-        className="fixed top-0 left-0 right-0 z-50 flex justify-center w-full p-4 h-full overflow-x-hidden overflow-y-auto md:inset-0 bg-gray-500 bg-opacity-20"
+        className="fixed top-0 left-0 right-0 z-50 flex justify-center w-full p-4 h-full overflow-x-hidden overflow-y-auto md:inset-0 bg-gray-500 bg-opacity-20 "
       >
         <div className="relative bg-white w-1/2 h-full rounded-lg shadow dark:bg-gray-700">
           <FontAwesomeIcon icon={faXmark} onClick={() => setModalOpen(false)} />
@@ -84,7 +84,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center relative items-center w-full overflow-x-hidden">
+    <div className="flex flex-col justify-center relative items-center w-full overflow-x-hidden ">
       {modalOpen && <BookModal setModalOpen={setModalOpen} />}
       <section
         className="py-12 px-4 md:px-24 flex w-full justify-center"
@@ -99,8 +99,8 @@ export default function Home() {
         />
         <div className="home_content">
           <div className="content_text text-center lg:text-left">
-            <h1 className="text-6xl font-extrabold">
-              Save <span className="text-orange-500">big</span> with our car
+            <h1 className="text-5xl font-extrabold">
+              Save <span className="text-red-500">big</span> with our car
               rental
             </h1>
             <p className="mt-4 text-lg">
@@ -111,14 +111,14 @@ export default function Home() {
           <div className="home_buttons flex flex-col sm:flex-row gap-2 mt-4">
             <button
               onClick={scrollToBooking}
-              className="bg-orange-500 py-4 px-9 ml-0 sm:ml-auto lg:ml-0 text-center text-white font-semibold rounded-sm hover:bg-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="bg-[#c6202b] py-4 px-9 ml-0 sm:ml-auto lg:ml-0 text-center text-white font-semibold rounded-md hover:bg-[#e7646e] transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Book Ride
               <FontAwesomeIcon icon={faCircleCheck} className="ml-1" />
             </button>
             <Link
               href="/"
-              className="bg-black mr-0 sm:mr-auto lg:mr-0 py-4 px-9 text-white text-center font-semibold rounded-sm hover:bg-white hover:text-black transition-all duration-300 border-black border-2"
+              className="bg-black mr-0 sm:mr-auto lg:mr-0 py-4 px-9 text-white text-center font-semibold rounded-md hover:bg-white hover:text-black transition-all duration-300 border-black border-2"
             >
               Learn More
               <FontAwesomeIcon icon={faArrowAltCircleRight} className="ml-1" />
@@ -129,7 +129,7 @@ export default function Home() {
           <Image
             src="/assets/car.png"
             height={500}
-            width={700}
+            width={1000}
             alt="car"
             className="hidden lg:block"
           />
@@ -204,7 +204,7 @@ export default function Home() {
         </span>
         <span className="text-2xl">
           Top Airports. Local Suppliers.{" "}
-          <span className="text-orange-500">24/7</span> Support.
+          <span className="text-red-500">24/7</span> Support.
         </span>
       </section>
       <section
@@ -232,7 +232,7 @@ export default function Home() {
               ultimate renting experience, so don&apos;t miss out on your chance
               to save big.
             </p>
-            <button className="bg-orange-500 mx-auto lg:mx-0 py-4 px-6 w-full md:w-1/3 text-white mt-4 font-extrabold shadow-[6px_6px_0px_0px_rgba(0,0,0,0.1)] hover:bg-orange-600 hover:shadow-[6px_6px_2px_2px_rgba(0,0,0,0.1)] transition duration-200">
+            <button className="bg-[#c6202b] mx-auto lg:mx-0 py-4 px-6 w-full md:w-1/3 text-white mt-4 font-extrabold shadow-[6px_6px_0px_0px_rgba(0,0,0,0.1)] hover:bg-[#c6202b] hover:shadow-[6px_6px_2px_2px_rgba(0,0,0,0.1)] transition duration-200 rounded-lg">
               Find Details
             </button>
           </div>
@@ -318,7 +318,7 @@ export default function Home() {
       >
         <div className="w-full  xl:w-1/2">
           <span>
-            <h2 className="text-5xl font-bold pr-4">
+            <h2 className="text-5xl font-bold lg:px-4">
               Download our app to get most out of it
             </h2>
             <p className="mt-4 text-lg w-2/3">
@@ -335,7 +335,7 @@ export default function Home() {
       </section>
       {fastScrollVisible && (
         <button
-          className="fixed top-[90%] z-10 left-[75%] lg:left-[95%] bg-orange-500 border-[#E9E9E9] text-white px-3 py-2 hover:text-black hover:bg-white border-2 hover:border-black"
+          className="fixed top-[90%] z-10 left-[75%] lg:left-[95%] bg-[#c6202b] border-[#E9E9E9] text-white px-3 py-2 hover:text-black hover:bg-white border-2 hover:border-black rounded-lg"
           onClick={scrollToTop}
         >
           <FontAwesomeIcon icon={faChevronUp} />

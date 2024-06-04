@@ -7,14 +7,14 @@ import { scrollToBooking, signToScrollEvents } from "../helpers/scrollHelper"
 
 export default function CarPicker({ models }: { models: Model[] }) {
   const [pickedCar, setPickedCar] = useState({
-    model: "Audi",
-    rentName: "Audi A1 S-Line",
-    mark: "A1",
+    model: " Verna",
+    rentName: "Hyundai verna",
+    mark: "Hyundai",
     year: 2012,
     doors: "4/5",
     AC: true,
     transmission: "Manual",
-    fuel: "Gasoline",
+    fuel: "Diesel",
     price: 45,
     src: "/assets/models/audi.jpg",
   });
@@ -35,7 +35,7 @@ export default function CarPicker({ models }: { models: Model[] }) {
           {models.map((m: Model, index) => (
             <button
               key={`${id}-${index}`}
-              className="py-4 px-6 bg-[#E9E9E9] cursor-pointer hover:bg-orange-500 hover:text-white w-full focus:bg-orange-500 focus:text-white outline-none transition-all duration-300"
+              className="py-4 px-6 bg-[#c6202b] cursor-pointer hover:bg-red-500 hover:text-white w-full focus:bg-[#c6202b] focus:text-white outline-none transition-all duration-300"
               onClick={() => setPickedCar(m)}
             >
               {m.rentName}
@@ -57,7 +57,7 @@ export default function CarPicker({ models }: { models: Model[] }) {
           className="flex flex-col text-center ml-auto text-black w-full"
           data-aos="fade-right"
         >
-          <div className="bg-orange-500 text-white px-4 py-2 flex items-center m-0 w-full justify-center border-2 border-orange-500">
+          <div className="bg-[#c6202b] text-white px-4 py-2 flex items-center m-0 w-full justify-center border-2 border-[#c6202b]">
             <span className="font-bold text-3xl mr-2">${pickedCar.price}</span>
             <span className="text-lg">/ rent per day</span>
           </div>
@@ -121,7 +121,7 @@ export default function CarPicker({ models }: { models: Model[] }) {
           </div>
           <button
             onClick={scrollToBooking}
-            className="bg-orange-500 py-4 px-6 text-white mt-4 font-extrabold shadow-[6px_6px_0px_0px_rgba(0,0,0,0.1)] hover:bg-orange-600 hover:shadow-[6px_6px_2px_2px_rgba(0,0,0,0.1)] transition duration-200"
+            className="bg-[#c6202b] py-4 px-6 text-white mt-4 font-extrabold shadow-[6px_6px_0px_0px_rgba(0,0,0,0.1)] hover:bg-red-600 hover:shadow-[6px_6px_2px_2px_rgba(0,0,0,0.1)] transition duration-200"
           >
             RESERVE NOW
           </button>

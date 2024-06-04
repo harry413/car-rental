@@ -34,7 +34,7 @@ export default function InfoDrop() {
             <button
               className={`py-4 w-full px-4 lg:px-12 font-medium text-xl transition-all duration-500 flex items-center justify-between ${
                 active === index
-                  ? "bg-orange-500"
+                  ? "bg-[#c6202b]"
                   : "bg-white hover:bg-gray-100"
               }`}
               onClick={() =>

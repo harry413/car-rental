@@ -109,7 +109,7 @@ const Slider = () => {
                   front={
                     <FontAwesomeIcon
                       icon={faQuoteRight}
-                      className="text-6xl text-orange-500"
+                      className="text-6xl text-[#c6202b]"
                     />
                   }
                   back={
@@ -117,7 +117,7 @@ const Slider = () => {
                       <StarRating
                         flip={true}
                         rating={s.rating}
-                        activeColor="text-orange-500"
+                        activeColor="text-[#c6202b]"
                         inactiveColor="text-gray-500"
                         size="text-xl"
                       />
@@ -132,23 +132,22 @@ const Slider = () => {
       <div className="flex gap-2">
         <button
           className={`rounded-full ${
-            slide === 0 ? "bg-orange-500" : "bg-gray-300"
-          } hover:bg-orange-500 w-4 h-4 focus:outline-none transition-all duration-200`}
+            slide === 0 ? "bg-[#c6202b]" : "bg-gray-300"
+          } hover:bg-red-500 w-4 h-4 focus:outline-none transition-all duration-200`}
           onClick={() => setSlide(0)}
         ></button>
         <button
           className={`rounded-full ${
-            slide === 1 ? "bg-orange-500" : "bg-gray-300"
-          } hover:bg-orange-500 w-4 h-4 focus:outline-none transition-all duration-200`}
+            slide === 1 ? "bg-[#c6202b]" : "bg-gray-300"
+          } hover:bg-red-500 w-4 h-4 focus:outline-none transition-all duration-200`}
           onClick={() => setSlide(1)}
         ></button>
         <button
           className={`rounded-full ${
-            slide === 2 ? "bg-orange-500" : "bg-gray-300"
-          } hover:bg-orange-500 w-4 h-4 focus:outline-none transition-all duration-200`}
+            slide === 2 ? "bg-[#c6202b]" : "bg-gray-300"
+          } hover:bg-red-500 w-4 h-4 focus:outline-none transition-all duration-200`}
           onClick={() => setSlide(2)}
         ></button>
-        
       </div>
     </div>
   );

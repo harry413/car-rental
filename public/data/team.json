@@ -1,17 +1,8 @@
 {
   "data": [
     {
-      "name": "Lakhan Nagar",
-      "position": "Sr.Software Engineer",
-      "contact": {
-        "email": "Lakhan@car-rental-pro.gmail.com",
-        "phone": "555-555-5555",
-        "telegram": "https://t.me/"
-      }
-    },
-    {
       "name": "Gopal Patidar",
-      "position": "Software Engineer",
+      "position": "Business Owner",
       "contact": {
         "email": "gopal@car-rental-pro@gmail.com",
         "phone": "551-455-2455",
@@ -19,44 +10,18 @@
       }
     },
     {
-      "name": "Sachin Soni",
-      "position": "Salesman",
-      "contact": {
-        "email": "sachin@car-rental-pro@gmail.com",
-        "phone": "123-456-7890",
-        "telegram": "https://t.me/"
-      }
-    },
-    {
-      "name": "Vishal Tanwar",
-      "position": "Data Analyst",
-      "contact": {
-        "email": "vishal@car-rental-pro.gmail.com",
-        "phone": "555-555-5555",
-        "telegram": "https://t.me/"
-      }
-    },
-    {
       "name": "Akanksha Singh",
-      "position": "Software Engineer",
+      "position": "Manager",
       "contact": {
         "email": "Akanksha@car-rental-pro@gmail.com",
         "phone": "551-455-2455",
         "telegram": "https://t.me/"
       }
     },
-    {
-      "name": "Chetan Singh",
-      "position": "Salesman",
-      "contact": {
-        "email": "chetan@car-rental-pro@gmail.com",
-        "phone": "123-456-7890",
-        "telegram": "https://t.me/"
-      }
-    },
+  
     {
       "name": "Yogeshwari Jhala",
-      "position": "Sr.Software Developer",
+      "position": "Car Detalist",
       "contact": {
         "email": "Yoge@car-rental-pro.gmail.com",
         "phone": "555-555-5555",
@@ -65,7 +30,7 @@
     },
     {
       "name": "Deepsikha Prajapat",
-      "position": "Designer",
+      "position": "Salesman",
       "contact": {
         "email": "Dp@car-rental-pro@gmail.com",
         "phone": "551-455-2455",
@@ -73,17 +38,8 @@
       }
     },
     {
-      "name": "Arptit ",
-      "position": "Front-End Developer",
-      "contact": {
-        "email": "arpit@car-rental-pro@gmail.com",
-        "phone": "123-456-7890",
-        "telegram": "https://t.me/"
-      }
-    },
-    {
-      "name": "Muskan Chouhan",
-      "position": "Product Manager",
+      "name": "harry patidar",
+      "position": "Mechanic",
       "contact": {
         "email": "panda@car-rental-pro.gmail.com",
         "phone": "555-555-5555",
@@ -91,11 +47,11 @@
       }
     },
     {
-      "name": "Mangal Patidar",
-      "position": "Software Engineer",
+      "name": "Muskan Chouhan",
+      "position": "Photographer",
       "contact": {
-        "email": "mangal@car-rental-pro@gmail.com",
-        "phone": "551-455-2455",
+        "email": "panda@car-rental-pro.gmail.com",
+        "phone": "555-555-5555",
         "telegram": "https://t.me/"
       }
     }

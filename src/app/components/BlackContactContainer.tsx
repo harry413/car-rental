@@ -9,8 +9,8 @@ export default function BlackContactContainer() {
           Book a car by getting in touch with us
         </span>
         <span className="text-3xl relative">
-          <span className="text-orange-500">
-            <span className="text-bold hover:text-orange-500 transition-all duration-200">
+          <span className="text-red-500">
+            <span className="text-bold hover:text-red-500 transition-all duration-200">
               <a href="tel:958-900-5828" className="font-semibold">
                 <FontAwesomeIcon icon={faPhone} className="mr-2" />
                 958-900-5828

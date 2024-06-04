@@ -1,132 +1,115 @@
-import { useEffect, useId, useRef, useState } from "react";
-import { Model } from "@/Types";
-import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { scrollToBooking, signToScrollEvents } from "../helpers/scrollHelper";
+"use client";
 
-export default function CarPicker({ models }: { models: Model[] }) {
-  const [pickedCar, setPickedCar] = useState({
-    model: "verna",
-    rentName: "Hyundai verna",
-    mark: "Hyundai",
-    year: 2023,
-    doors: "4/5",
-    AC: true,
-    transmission: "Manual",
-    fuel: "Diesel",
-    price: 45,
-    src: "/assets/models/audi.jpg",
-  });
+import { useRef, useState, useId, useEffect, MouseEventHandler } from "react";
+import ReactDOM from "react-dom";
+import { CustomSelectProps } from "@/Types";
 
+function SelectModal({
+  width,
+  id,
+  values,
+  handleOptionClick,
+}: {
+  width: number;
+  id: string;
+  values: string[];
+  handleOptionClick: MouseEventHandler;
+}) {
+  //to create a portal, use the createPortal function:
+  const optionId = useId();
+  if (typeof window === "object") {
+    return ReactDOM.createPortal(
+      <div
+        className={`modal absolute mt-3 -ml-4 mb-0`}
+        style={{ width: width }}
+      >
+        <ul className="bg-white ">
+          {values.map((val: string, index: number) => (
+            <li
+              key={`${optionId}-${index}`}
+              onClick={handleOptionClick}
+              className="py-2 px-4 outline-none hover:bg-red-500 hover:text-white cursor-pointer w-full"
+            >
+              {val}
+            </li>
+          ))}
+        </ul>
+      </div>,
+      document.getElementById(id) as Element
+    );
+  }
+  return null;
+}
+
+export default function CustomSelect({
+  id,
+  defaultValue,
+  values,
+  ref,
+}: CustomSelectProps) {
+  const [width, setWidth] = useState(0);
+  const modalRef = useRef<HTMLDivElement>(null);
+  const [status, setStatus] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
+  const [selected, setSelected] = useState(defaultValue);
   useEffect(() => {
-    signToScrollEvents();
-    AOS.init();
+    const clickHandler = (e: MouseEvent) => {
+      if (
+        !modalRef?.current?.innerHTML
+          .toString()
+          .toString()
+          .includes((e?.target as Element).innerHTML)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.body.addEventListener("click", clickHandler);
+
+    return () => {
+      document.body.removeEventListener("click", clickHandler);
+    };
   }, []);
 
-  const id = useId();
+  const manageClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    const target = e.target as Element;
+    const rect = target.getBoundingClientRect();
+    const parentRect = target.parentElement?.getBoundingClientRect();
+    if (!parentRect) return;
+    setWidth(target.children.length !== 0 ? rect.width : parentRect.width);
+    setIsOpen((prev) => !prev);
+  };
+
+  const handleOptionClick = (e: React.MouseEvent<HTMLElement>) => {
+    if (!(e.target instanceof HTMLElement)) return;
+    setSelected((e?.target as Element).innerHTML);
+    setIsOpen(false);
+  };
+
   return (
-    <div className="flex justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 auto-rows-auto gap-10 bg-white w-full items-center py-4">
-        <div
-          className="flex flex-col justify-self-start mr-auto text-center text-black font-extrabold text-lg gap-2 w-full"
-          data-aos="fade-left"
+    <div className="bg-white" ref={modalRef}>
+      <div
+        className="py-2 px-4 outline-none border-2 border-grey-300 rounded-md cursor-pointer w-full"
+        onClick={manageClick}
+        id={id}
+        ref={ref}
+      >
+        <span
+          className={
+            "w-full flex " + (defaultValue === selected ? "text-gray-500" : "")
+          }
         >
-          {models?.map((Model, index) => (
-            <button
-              key={`${id}-${index}`}
-              className="py-4 px-6 bg-[#E9E9E9] cursor-pointer hover:bg-orange-500 hover:text-white w-full focus:bg-orange-500 focus:text-white outline-none transition-all duration-300"
-              onClick={() => setPickedCar(Model)}
-            >
-              {Model.rentName}
-            </button>
-          ))}
-        </div>
-        <div
-          className="flex flex-col text-center text-black font-extrabold text-lg"
-          data-aos="fade-up"
-        >
-          <Image
-            src={pickedCar?.src}
-            width={400}
-            height={400}
-            alt="picked car image"
-          />
-        </div>
-        <div
-          className="flex flex-col text-center ml-auto text-black w-full"
-          data-aos="fade-right"
-        >
-          <div className="bg-orange-500 text-white px-4 py-2 flex items-center m-0 w-full justify-center border-2 border-orange-500">
-            <span className="font-bold text-3xl mr-2">${pickedCar.price}</span>
-            <span className="text-lg">/ rent per day</span>
-          </div>
-          <div className="flex flex-col m-0 border-black border-r-2 border-l-2 w-full">
-            <div className="flex items-center py-2 border-black border-b-2">
-              <span className="border-r-2 border-black px-4 ml-auto w-full break-all">
-                Model
-              </span>
-              <span className="mr-auto px-4 w-full break-all">
-                {pickedCar.model}
-              </span>
-            </div>
-            <div className="flex items-center py-2 border-black border-b-2">
-              <span className="border-r-2 border-black px-4 ml-auto w-full break-all">
-                Mark
-              </span>
-              <span className="mr-auto px-4 w-full break-all">
-                {pickedCar.mark}
-              </span>
-            </div>
-            <div className="flex items-center py-2 border-black border-b-2">
-              <span className="border-r-2 border-black px-4 ml-auto w-full break-all">
-                Year
-              </span>
-              <span className="mr-auto px-4 w-full break-all">
-                {pickedCar.year}
-              </span>
-            </div>
-            <div className="flex items-center py-2 border-black border-b-2">
-              <span className="border-r-2 border-black px-4 ml-auto w-full break-all">
-                Doors
-              </span>
-              <span className="mr-auto px-4 w-full break-all">
-                {pickedCar.doors}
-              </span>
-            </div>
-            <div className="flex items-center py-2 border-black border-b-2">
-              <span className="border-r-2 border-black px-4 ml-auto w-full break-all">
-                AC
-              </span>
-              <span className="mr-auto px-4 w-full break-all">
-                {pickedCar.AC ? "True" : "False"}
-              </span>
-            </div>
-            <div className="flex items-center justify-center py-2 border-black border-b-2">
-              <span className="border-r-2 border-black px-4 ml-auto w-full break-all">
-                Transmission
-              </span>
-              <span className="mr-auto px-4 w-full break-all">
-                {pickedCar.transmission}
-              </span>
-            </div>
-            <div className="flex items-center justify-center py-2 border-black border-b-2">
-              <span className="border-r-2 border-black px-4 ml-auto w-full break-all">
-                Fuel
-              </span>
-              <span className="mr-auto px-4 w-full break-all">
-                {pickedCar.fuel}
-              </span>
-            </div>
-          </div>
-          <button
-            onClick={scrollToBooking}
-            className="bg-orange-500 py-4 px-6 text-white mt-4 font-extrabold shadow-[6px_6px_0px_0px_rgba(0,0,0,0.1)] hover:bg-orange-600 hover:shadow-[6px_6px_2px_2px_rgba(0,0,0,0.1)] transition duration-200"
-          >
-            RESERVE NOW
-          </button>
-        </div>
+          {selected}
+        </span>
       </div>
+      {isOpen && (
+        <SelectModal
+          width={width}
+          id={id}
+          handleOptionClick={handleOptionClick}
+          values={values}
+        />
+      )}
     </div>
   );
 }

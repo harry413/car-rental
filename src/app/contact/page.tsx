@@ -35,19 +35,19 @@ export default function ContactPage() {
               research, development as well as a learning specialist. Over 15
               years of experience.
             </p>
-            <span className="text-bold hover:text-orange-500 transition-all duration-200">
+            <span className="text-bold hover:text-red-500 transition-all duration-200">
               <a href="tel:958-900-5828" className="font-semibold">
                 <FontAwesomeIcon icon={faPhone} className="mr-2" />
                 958-900-5828
               </a>
             </span>
-            <span className="text-bold hover:text-orange-500 transition-all duration-200">
+            <span className="text-bold hover:text-red-500 transition-all duration-200">
               <a href="mailto:carrental@gmail.com" className="font-semibold">
                 <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                 sachinpatidar413@gmail.com
               </a>
             </span>
-            <span className="text-bold hover:text-orange-500 transition-all duration-200">
+            <span className="text-bold hover:text-red-500 transition-all duration-200">
               <a className="font-semibold">
                 <FontAwesomeIcon icon={faLocationDot} className="mr-2" />
                 Indore
@@ -58,7 +58,7 @@ export default function ContactPage() {
             <div>
               <label className="text-lg font-semibold">
                 Full Name
-                <span className="text-orange-500 ml-1">*</span>
+                <span className="text-red-500 ml-1">*</span>
               </label>
               <input
                 type="text"
@@ -69,7 +69,7 @@ export default function ContactPage() {
             </div>
             <div>
               <label className="text-lg font-semibold">
-                Email<span className="text-orange-500 ml-1">*</span>
+                Email<span className="text-red-500 ml-1">*</span>
               </label>
               <input
                 type="email"
@@ -80,7 +80,7 @@ export default function ContactPage() {
             </div>
             <div>
               <label className="text-lg font-semibold">
-                Tell us about it<span className="text-orange-500 ml-1">*</span>
+                Tell us about it<span className="text-red-500 ml-1">*</span>
               </label>
               <textarea
                 className="w-full px-6 py-4 bg-gray-100 rounded-sm mt-2 outline-none h-48"
@@ -88,7 +88,7 @@ export default function ContactPage() {
                 required
               />
             </div>
-            <button className="py-4 px-8 bg-orange-500 text-white text-center text-xl font-semibold shadow-lg shadow-orange-400 hover:bg-orange-600 hover:shadow-lg hover:shadow-orange-400">
+            <button className="py-4 px-8 bg-red-500 text-white text-center text-xl font-semibold shadow-lg shadow-red-400 hover:bg-red-600 hover:shadow-lg hover:shadow-red-400">
               <FontAwesomeIcon icon={faEnvelopeCircleCheck} className="mr-2" />
               Send Message
             </button>

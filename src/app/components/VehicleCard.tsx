@@ -77,8 +77,8 @@ export default function VehicleCard({ car }: { car: Model }) {
           </div>
         </div>
         <div className="mx-8 mt-auto border-t-2 border-t-gray-300">
-          <a href="/#booking" className="text-orange-500 text-lg">
-            <button className="bg-orange-500 w-full py-4 text-xl rounded-sm my-4 text-white font-bold text-center shadow-orange-400 shadow-md hover:bg-orange-600 hover:shadow-orange-400 hover:shadow-lg transition-all duration-500">
+          <a href="/#booking" className="text-red-500 text-lg">
+            <button className="bg-red-500 w-full py-4 text-xl rounded-sm my-4 text-white font-bold text-center shadow-red-400 shadow-md hover:bg-red-600 hover:shadow-red-400 hover:shadow-lg transition-all duration-500">
               Book Ride
             </button>
           </a>

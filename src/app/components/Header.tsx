@@ -28,37 +28,37 @@ export default function Header() {
           </Link>
         </div>
         <div className="hidden lg:block nav_links">
-          <ul className="flex gap-2 xl:gap-6 font-semibold text-sm xl:text-xl">
-            <li className="cursor-pointer hover:text-orange-500 transition-all duration-300">
+          <ul className="flex gap-2 xl:gap-6 font-2xl text-sm xl:text-lg">
+            <li className="cursor-pointer hover:text-red-500 transition-all duration-300">
               <Link href="/">Home</Link>
             </li>
-            <li className="cursor-pointer hover:text-orange-500 transition-all duration-300">
+            <li className="cursor-pointer hover:text-red-500 transition-all duration-300">
               <Link href="/about">About</Link>
             </li>
-            <li className="cursor-pointer hover:text-orange-500 transition-all duration-300">
+            <li className="cursor-pointer hover:text-red-500 transition-all duration-300">
               <Link href="/vehicle-models">Vehicle Models</Link>
             </li>
-            <li className="cursor-pointer hover:text-orange-500 transition-all duration-300">
+            <li className="cursor-pointer hover:text-red-500 transition-all duration-300">
               <Link href="/testimonials">Testimonials</Link>
             </li>
-            <li className="cursor-pointer hover:text-orange-500 transition-all duration-300">
+            <li className="cursor-pointer hover:text-red-500 transition-all duration-300">
               <Link href="/team">Our Team</Link>
             </li>
-            <li className="cursor-pointer hover:text-orange-500 transition-all duration-300">
+            <li className="cursor-pointer hover:text-red-500 transition-all duration-300">
               <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>
         <div className="hidden lg:block nav_buttons">
-          <button className="font-bold mx-6 cursor-pointer hover:text-orange-500 transition-all duration-300">
+          <button className="font-bold mx-6 cursor-pointer hover:text-red-500 transition-all duration-300">
             <Link href="/sign-in">Sign In</Link>
           </button>
-          <button className="bg-orange-500 py-2 px-6 text-white font-semibold rounded-sm hover:bg-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl">
+          <button className="bg-[#c6202b] py-2 px-6 text-white font-semibold rounded-sm hover:bg-[#c6202b] transition-all duration-300 shadow-lg hover:shadow-xl rounded-md">
             <Link href="sign-up">Sign Up</Link>
           </button>
         </div>
         <div
-          className="burger block lg:hidden text-4xl hover:text-orange-500"
+          className="burger block lg:hidden text-4xl hover:text-red-500"
           onClick={() => setBurgerMenuOpen((prev) => !prev)}
         >
           <FontAwesomeIcon icon={faBars} />

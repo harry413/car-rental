@@ -66,11 +66,11 @@ export default function BookCar({
           </div>
         )}
         <h1 className="text-3xl font-extrabold">Book a car</h1>
-        <div className="booking_content text-xl flex-col lg:flex-col flex gap-6 justify-between">
-          <div className="flex flex-col justify-between gap-3 w-full">
+        <div className="booking_content text-xl flex-col lg:flex-row flex gap-6 justify-between">
+          <div className="flex flex-col  justify-between gap-3 w-full">
             <label className="font-bold">
-              <FontAwesomeIcon icon={faCar} className="text-orange-500 mr-2" />
-              Select Your Car Type <span className="text-orange-500">*</span>
+              <FontAwesomeIcon icon={faCar} className="text-[#c6202b] mr-2" />
+              Select Your Car Type <span className="text-[#c6202b]">*</span>
             </label>
             <CustomSelect
               id="car-select"
@@ -79,14 +79,14 @@ export default function BookCar({
               ref={carRef}
             />
           </div>
-          <div className="flex justify-between gap-3 w-full">
-            {/* <label className="font-bold">
+          <div className="flex flex-col justify-between gap-3 w-full">
+            <label className="font-bold">
               <FontAwesomeIcon
                 icon={faLocationDot}
-                className="text-orange-500 mr-2"
+                className="text-[#c6202b] mr-2"
               />
-              Pick-up <span className="text-orange-500">*</span>
-            </label> */}
+              Pick-up <span className="text-[#c6202b]">*</span>
+            </label>
             <CustomSelect
               id="pick-up-select"
               defaultValue="Select pick-up location"
@@ -94,14 +94,14 @@ export default function BookCar({
               ref={pickUpCityRef}
             />
           </div>
-          <div className="flex justify-between gap-3 w-full">
-            {/* <label className="font-bold">
+          <div className="flex flex-col justify-between gap-3 w-full">
+            <label className="font-bold">
               <FontAwesomeIcon
                 icon={faLocationDot}
-                className="text-orange-500 mr-2"
+                className="text-[#c6202b] mr-2"
               />
-              Drop-of <span className="text-orange-500">*</span>
-            </label> */}
+              Drop-of <span className="text-[#c6202b]">*</span>
+            </label>
             <CustomSelect
               id="drop-of-select"
               defaultValue="Select drop-of location"
@@ -115,9 +115,9 @@ export default function BookCar({
             <label className="font-bold">
               <FontAwesomeIcon
                 icon={faCalendarDays}
-                className="text-orange-500 mr-2"
+                className="text-[#c6202b] mr-2"
               />
-              Pick-up <span className="text-orange-500">*</span>
+              Pick-up <span className="text-[#c6202b]">*</span>
             </label>
             <input
               type="date"
@@ -129,9 +129,9 @@ export default function BookCar({
             <label className="font-bold">
               <FontAwesomeIcon
                 icon={faCalendarDays}
-                className="text-orange-500 mr-2"
+                className="text-[#c6202b] mr-2"
               />
-              Drop-of <span className="text-orange-500">*</span>
+              Drop-of <span className="text-[#c6202b]">*</span>
             </label>
             <input
               type="date"
@@ -141,7 +141,7 @@ export default function BookCar({
           </div>
           <div className="flex flex-col justify-between gap-3 w-full self-end">
             <button
-              className="bg-orange-500 py-3 px-9 text-white font-semibold rounded-sm hover:bg-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="bg-[#c6202b] py-3 px-9 text-white font-semibold rounded-sm hover:bg-red-600 transition-all duration-300 shadow-lg hover:shadow-xl"
               onClick={handleSubmit}
             >
               Search
