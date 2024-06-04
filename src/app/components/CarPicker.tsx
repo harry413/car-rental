@@ -35,7 +35,7 @@ export default function CarPicker({ models }: { models: Model[] }) {
           {models.map((m: Model, index) => (
             <button
               key={`${id}-${index}`}
-              className="py-4 px-6 bg-[#c6202b] cursor-pointer hover:bg-red-500 hover:text-white w-full focus:bg-[#c6202b] focus:text-white outline-none transition-all duration-300"
+              className="py-4 px-2 bg-[#c6202b] cursor-pointer hover:bg-red-500 hover:text-white w-full focus:bg-[#c6202b] focus:text-white outline-none transition-all duration-300"
               onClick={() => setPickedCar(m)}
             >
               {m.rentName}
