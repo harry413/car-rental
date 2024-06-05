@@ -23,7 +23,7 @@
       "transmission": "Manual",
       "fuel": "Diesel",
       "price": 37,
-      "src": "/assets/models/vw-golf.jpg",
+      "src": "/assets/models/Tata Indica Vista.jpg",
       "rating": 4.7
     },
     {
@@ -49,7 +49,7 @@
       "transmission": "Manual",
       "fuel": "Diesel",
       "price": 35,
-      "src": "/assets/models/bmw-320.jpg",
+      "src": "/assets/models/toyoto etios.jpg",
       "rating": 4
     },
     {
@@ -75,7 +75,7 @@
       "transmission": "Automatic",
       "fuel": "Diesel",
       "price": 25,
-      "src": "/assets/models/vw-passat.jpg",
+      "src": "/assets/models/Skoda Rapid.jpg",
       "rating": 4
     }
   ]
