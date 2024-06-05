@@ -30,7 +30,7 @@ export default function About() {
           <h2 className="text-5xl font-bold">
             You start the engine and your adventure begins
           </h2>
-          <p className="text-gray-500 text-lg my-4">
+          <p className="text-gray-500 text-lg my-4 ">
             Certain but she but shyness why cottage. Guy the put instrument sir
             entreaties affronting. Pretended exquisite see cordially the you.
             Weeks quiet do vexed or whose. Motionless if no to affronting
@@ -52,7 +52,7 @@ export default function About() {
                 <Image
                   src="/assets/car-types-icon.png"
                   width={50}
-                  height={50}
+                  height={50} 
                   alt="car types icon"
                   className="mt-2"
                 />
