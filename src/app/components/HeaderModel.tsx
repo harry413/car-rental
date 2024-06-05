@@ -24,8 +24,7 @@ export default function HeaderModal({
       >
         <FontAwesomeIcon icon={faXmark} />
       </button>
-      <div onClick={closeModal} className="h-full text-center  flex flex-col justify-center">
-            <ul  className="h-full text-center  flex flex-col justify-center">
+            <ul className="h-full text-center  flex flex-col justify-center">
                 <li className="py-4 px-4 outline-none text-lg hover:text-red-500 cursor-pointer w-full">
                   <Link href="/" >Home</Link>
                 </li>
@@ -45,7 +44,6 @@ export default function HeaderModal({
                   <Link  href="/contact">Contact</Link>
                 </li>
           </ul>
-        </div>
     </div>,
     document.body
   );
