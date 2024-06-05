@@ -16,7 +16,7 @@ export default function CarPicker({ models }: { models: Model[] }) {
     transmission: "Manual",
     fuel: "Diesel",
     price: 45,
-    src: "/assets/models/audi.jpg",
+    src: "/assets/models/verna.jpg",
   });
 
   useEffect(() => {
