@@ -31,7 +31,7 @@ export default function VehicleCard({ car }: { car: Model }) {
     <div className="h-full w-full" data-aos="flip-right">
       <div className="w-full flex flex-col justify-center rounded-2xl h-full border-2 border-gray-200 shadow-lg bg-white">
         <Image
-          src="/assets/audi.png"
+          src="/assets/model/verna.png"
           width={300}
           height={300}
           alt={`car picture - ${rentName}`}

@@ -42,7 +42,7 @@ export default function ContactPage() {
               </a>
             </span>
             <span className="text-bold hover:text-red-500 transition-all duration-200">
-              <a href="mailto:carrental@gmail.com" className="font-semibold">
+              <a href="mailto:sachinpatidar413@gmail.com" className="font-semibold">
                 <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                 sachinpatidar413@gmail.com
               </a>
@@ -89,8 +89,8 @@ export default function ContactPage() {
               />
             </div>
             <button className="py-4 px-8 bg-red-500 text-white text-center text-xl font-semibold shadow-lg shadow-red-400 hover:bg-red-600 hover:shadow-lg hover:shadow-red-400">
-              <FontAwesomeIcon icon={faEnvelopeCircleCheck} className="mr-2" />
-              Send Message
+              <a href="mailto:sachinpatidar413@gmail.com"><FontAwesomeIcon icon={faEnvelopeCircleCheck} className="mr-2" />
+              Send Message</a>
             </button>
           </div>
         </div>

@@ -43,7 +43,7 @@ export default function About() {
           <div className=" flex flex-col md:flex-row mt-auto">
             <div className="flex py-4 px-6 md:pr-6 md:pl-0 md:border-black md:border-r-2 gap-4 justify-center">
               <div className="flex flex-col items-center justify-between">
-                <h2 className="text-5xl font-bold">20</h2>
+                <h2 className="text-2xl font-bold">20</h2>
                 <p className="text-gray-500 text-xl text-center tracking-widest font-bold ">
                   CAR
                 </p>
@@ -51,8 +51,8 @@ export default function About() {
               <div className="flex flex-col items-center justify-between">
                 <Image
                   src="/assets/car-types-icon.png"
-                  width={70}
-                  height={70}
+                  width={50}
+                  height={50}
                   alt="car types icon"
                   className="mt-2"
                 />
@@ -63,7 +63,7 @@ export default function About() {
             </div>
             <div className="flex py-4 px-6 md:border-black md:border-r-2 gap-4 justify-center">
               <div className="flex flex-col items-center justify-between">
-                <h2 className="text-5xl font-bold">85</h2>
+                <h2 className="text-2xl font-bold">85</h2>
                 <p className="text-gray-500 text-xl text-center tracking-widest font-bold ">
                   RENTAL
                 </p>
@@ -71,8 +71,8 @@ export default function About() {
               <div className="flex flex-col items-center justify-between">
                 <Image
                   src="/assets/rental-outlets-icon.png"
-                  width={70}
-                  height={70}
+                  width={50}
+                  height={50}
                   alt="rental outlets icon"
                 />
                 <p className="text-gray-500 text-xl text-center tracking-widest font-bold ">
@@ -80,9 +80,9 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="flex py-4 px-6 gap-4 justify-center">
+            <div className="flex py-4 px-2 gap-2 justify-center">
               <div className="flex flex-col items-center justify-between">
-                <h2 className="text-5xl font-bold">75</h2>
+                <h2 className="text-2xl font-bold">75</h2>
                 <p className="text-gray-500 text-xl text-center tracking-widest font-bold ">
                   REPAIR
                 </p>
@@ -90,8 +90,8 @@ export default function About() {
               <div className="flex flex-col items-center  justify-between">
                 <Image
                   src="/assets/repair-shop-icon.png"
-                  width={50}
-                  height={50}
+                  width={40}
+                  height={40}
                   alt="repair shop icon"
                 />
                 <p className="text-gray-500 text-xl ml-1 text-center tracking-widest font-bold ">
@@ -111,7 +111,7 @@ export default function About() {
       >
         <h2 className="font-bold text-2xl">Plan your trip now</h2>
         <h1 className="font-extrabold text-5xl">Quick & easy car rental</h1>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 auto-rows-auto gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 auto-rows-auto gap-8">
           <div className="flex flex-col items-center text-center">
             <Image
               src="/assets/select-car.png"

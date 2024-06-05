@@ -26,22 +26,22 @@ export default function HeaderModal({
       </button>
       <ul className="h-full text-center  flex flex-col justify-center">
         <li className="py-4 px-4 outline-none text-lg hover:text-red-500 cursor-pointer w-full">
-          <Link href="/">Home</Link>
+          <Link href="/" onClick={closeModal}>Home</Link>
         </li>
         <li className="py-4 px-4 outline-none text-lg hover:text-red-500 cursor-pointer w-full">
-          <Link href="/about">About</Link>
+          <Link onClick={closeModal} href="/about">About</Link>
         </li>
         <li className="py-4 px-4 outline-none text-lg hover:text-red-500 cursor-pointer w-full">
-          <Link href="/vehicle-models">Models</Link>
+          <Link onClick={closeModal} href="/vehicle-models">Models</Link>
         </li>
         <li className="py-4 px-4 outline-none text-lg hover:text-red-500 cursor-pointer w-full">
-          <Link href="/testimonials">Testimonials</Link>
+          <Link onClick={closeModal} href="/testimonials">Testimonials</Link>
         </li>
         <li className="py-4 px-4 outline-none text-lg hover:text-red-500 cursor-pointer w-full">
-          <Link href="/team">Our Team</Link>
+          <Link onClick={closeModal} href="/team">Our Team</Link>
         </li>
         <li className="py-4 px-4 outline-none text-lg hover:text-red-500 cursor-pointer w-full">
-          <Link href="/contact">Contact</Link>
+          <Link onClick={closeModal} href="/contact">Contact</Link>
         </li>
       </ul>
     </div>,

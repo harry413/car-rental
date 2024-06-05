@@ -1,42 +1,42 @@
 {
   "data": [
     {
-      "model": "Honda City",
+      "model": "Honda City sv",
       "rentName": "Honda City ",
       "mark": "Honda",
-      "year": 2012,
+      "year": 2018,
       "doors": "4/5",
       "AC": true,
       "transmission": "Manual",
-      "fuel": "Diesel",
+      "fuel": "Petrol",
       "price": 45,
-      "src": "/assets/models/audi.jpg",
+      "src": "/assets/models/honda city.jpg",
       "rating": 4
     },
     {
       "model": "Tata Indica Vista",
       "rentName": "Tata Indica Vista",
       "mark": "Tata",
-      "year": 2008,
+      "year": 2010,
       "doors": "4/5",
       "AC": true,
       "transmission": "Manual",
       "fuel": "Diesel",
       "price": 37,
       "src": "/assets/models/vw-golf.jpg",
-      "rating": 5
+      "rating": 4.7
     },
     {
       "model": "Swift",
       "rentName": "Maruti Swift",
       "mark": "Maruti",
-      "year": 2006,
+      "year": 2009,
       "doors": "4/5",
       "AC": true,
       "transmission": "Automatic",
-      "fuel": "Hybrid",
+      "fuel": "Petrol",
       "price": 30,
-      "src": "/assets/models/toyota-camry.jpg",
+      "src": "/assets/models/Swift.jpg",
       "rating": 3
     },
     {
@@ -62,13 +62,13 @@
       "transmission": "Manual",
       "fuel": "Diesel",
       "price": 50,
-      "src": "/assets/models/mercedes-benz.jpg",
+      "src": "/assets/models/verna.jpg",
       "rating": 5
     },
     {
       "model": "Skoda Rapid",
       "rentName": "Skoda Rapid",
-      "mark": "Volkswagen",
+      "mark": "skoda",
       "year": 2008,
       "doors": "4/5",
       "AC": true,

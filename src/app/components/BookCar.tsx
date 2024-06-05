@@ -67,7 +67,7 @@ export default function BookCar({
         )}
         <h1 className="text-3xl font-extrabold">Book a car</h1>
         <div className="booking_content text-xl flex-col lg:flex-row flex gap-6 justify-between">
-          <div className="flex flex-col  justify-between gap-3 w-full">
+          <div className="flex flex-col  justify-between gap-2 w-full">
             <label className="font-bold">
               <FontAwesomeIcon icon={faCar} className="text-[#c6202b] mr-2" />
               Select Your Car Type <span className="text-[#c6202b]">*</span>
@@ -79,7 +79,7 @@ export default function BookCar({
               ref={carRef}
             />
           </div>
-          <div className="flex flex-col justify-between gap-3 w-full">
+          <div className="flex flex-col justify-between gap-2 w-full">
             <label className="font-bold">
               <FontAwesomeIcon
                 icon={faLocationDot}
@@ -90,7 +90,7 @@ export default function BookCar({
             <CustomSelect
               id="pick-up-select"
               defaultValue="Select pick-up location"
-              values={["City 1", "City 2", "City 3", "City 4"]}
+              values={["Indore", "Bhopal", "Shujalpur", "Ujjain"]}
               ref={pickUpCityRef}
             />
           </div>
@@ -105,7 +105,7 @@ export default function BookCar({
             <CustomSelect
               id="drop-of-select"
               defaultValue="Select drop-of location"
-              values={["City 1", "City 2", "City 3", "City 4"]}
+              values={["Indore", "Bhopal", "Shujalpur", "Ujjain"]}
               ref={dropOfCityRef}
             />
           </div>

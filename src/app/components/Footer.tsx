@@ -29,7 +29,7 @@ export default function Footer() {
             href="/"
             rel="noopener noreferrer"
           >
-            Degisn by Harry
+            Design by Harry
           </a>
         </li>
       </ul>
@@ -85,7 +85,7 @@ export default function Footer() {
           ></input>
         </li>
         <li>
-          <button className="bg-[#c6202b] py-4 px-9 text-white font-semibold rounded-sm w-full hover:bg-red-600 transition-all duration-300 shadow-lg hover:shadow-xl">
+          <button href="mailto:sachinpatidar413@gmail.com" className="bg-[#c6202b] py-4 px-9 text-white font-semibold rounded-sm w-full hover:bg-red-600 transition-all duration-300 shadow-lg hover:shadow-xl">
             Subscribe
           </button>
         </li>
