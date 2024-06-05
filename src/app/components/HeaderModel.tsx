@@ -24,24 +24,24 @@ export default function HeaderModal({
       >
         <FontAwesomeIcon icon={faXmark} />
       </button>
-      <ul className="h-full text-center  flex flex-col justify-center">
+      <ul onClick={closeModal} className="h-full text-center  flex flex-col justify-center">
         <li className="py-4 px-4 outline-none text-lg hover:text-red-500 cursor-pointer w-full">
-          <Link href="/" onClick={closeModal}>Home</Link>
+          <Link href="/" >Home</Link>
         </li>
         <li className="py-4 px-4 outline-none text-lg hover:text-red-500 cursor-pointer w-full">
-          <Link onClick={closeModal} href="/about">About</Link>
+          <Link  href="/about">About</Link>
         </li>
         <li className="py-4 px-4 outline-none text-lg hover:text-red-500 cursor-pointer w-full">
-          <Link onClick={closeModal} href="/vehicle-models">Models</Link>
+          <Link  href="/vehicle-models">Models</Link>
         </li>
         <li className="py-4 px-4 outline-none text-lg hover:text-red-500 cursor-pointer w-full">
-          <Link onClick={closeModal} href="/testimonials">Testimonials</Link>
+          <Link  href="/testimonials">Testimonials</Link>
         </li>
         <li className="py-4 px-4 outline-none text-lg hover:text-red-500 cursor-pointer w-full">
-          <Link onClick={closeModal} href="/team">Our Team</Link>
+          <Link  href="/team">Our Team</Link>
         </li>
         <li className="py-4 px-4 outline-none text-lg hover:text-red-500 cursor-pointer w-full">
-          <Link onClick={closeModal} href="/contact">Contact</Link>
+          <Link  href="/contact">Contact</Link>
         </li>
       </ul>
     </div>,
