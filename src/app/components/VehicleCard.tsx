@@ -34,7 +34,7 @@ export default function VehicleCard({ car }: { car: Model }) {
           src="/assets/models/verna.jpg"
           width={300}
           height={300}
-          alt={`car picture - ${rentName}`}
+          alt={`car picture - ₹{rentName}`}
           className="h-48 w-full object-cover"
         />
         <div className="px-4 py-4">
@@ -51,7 +51,7 @@ export default function VehicleCard({ car }: { car: Model }) {
               </div>
             </div>
             <div className="flex flex-col animate-pulse">
-              <h2 className="text-3xl font-bold">${price}</h2>
+              <h2 className="text-3xl font-bold">₹{price}</h2>
               <span className="text-gray-500 text-sm">per day</span>
             </div>
           </div>
