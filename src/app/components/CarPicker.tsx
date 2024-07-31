@@ -15,7 +15,7 @@ export default function CarPicker({ models }: { models: Model[] }) {
     AC: true,
     transmission: "Manual",
     fuel: "Diesel",
-    price: 45,
+    price: 950,
     src: "/assets/models/verna.jpg",
   });
 
@@ -58,7 +58,7 @@ export default function CarPicker({ models }: { models: Model[] }) {
           data-aos="fade-right"
         >
           <div className="bg-[#c6202b] text-white px-2 py-2 flex items-center m-0 w-full justify-center border-2 border-[#c6202b]">
-            <span className="font-bold text-3xl mr-2">${pickedCar.price}</span>
+            <span className="font-bold text-3xl mr-2">₹{pickedCar.price}</span>
             <span className="text-lg">/ rent per day</span>
           </div>
           <div className="flex flex-col m-0 border-black border-r-2 border-l-2 w-full">
