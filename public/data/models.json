@@ -9,7 +9,7 @@
       "AC": true,
       "transmission": "Manual",
       "fuel": "Petrol",
-      "price": 45,
+      "price": 950,
       "src": "/assets/models/honda city.jpg",
       "rating": 4
     },
@@ -22,7 +22,7 @@
       "AC": true,
       "transmission": "Manual",
       "fuel": "Diesel",
-      "price": 37,
+      "price": 800,
       "src": "/assets/models/Tata Indica Vista.jpg",
       "rating": 4.7
     },
@@ -35,7 +35,7 @@
       "AC": true,
       "transmission": "Automatic",
       "fuel": "Petrol",
-      "price": 30,
+      "price": 850,
       "src": "/assets/models/Swift.jpg",
       "rating": 3
     },
@@ -48,7 +48,7 @@
       "AC": true,
       "transmission": "Manual",
       "fuel": "Diesel",
-      "price": 35,
+      "price": 1000,
       "src": "/assets/models/toyoto etios.jpg",
       "rating": 4
     },
@@ -61,7 +61,7 @@
       "AC": true,
       "transmission": "Manual",
       "fuel": "Diesel",
-      "price": 50,
+      "price": 1050,
       "src": "/assets/models/verna.jpg",
       "rating": 5
     },
@@ -74,7 +74,7 @@
       "AC": true,
       "transmission": "Automatic",
       "fuel": "Diesel",
-      "price": 25,
+      "price": 900,
       "src": "/assets/models/Skoda Rapid.jpg",
       "rating": 4
     }
